@@ -16,7 +16,7 @@ limitations under the License.
 */
 
 #include <torch/extension.h>
-#include "./includes/ssl_cuda.h"
+#include "./ssl_cuda.h"
 
 void torch_ssl_cuda(const torch::Tensor &input,
                         torch::Tensor &output,

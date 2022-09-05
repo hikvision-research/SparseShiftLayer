@@ -18,8 +18,8 @@ import torch.nn as nn
 from torch.utils.cpp_extension import load
 from torch.autograd import Variable
 cuda_module = load(name="ssl_cuda",
-                   sources=["./includes/ssl_cuda.cpp",
-                            "./includes/ssl_cuda_kernels.cu"],
+                   sources=["./models/includes/ssl_cuda.cpp",
+                            "./models/includes/ssl_cuda_kernels.cu"],
                    verbose=True)
 
 class SSLFunction(torch.autograd.Function):
